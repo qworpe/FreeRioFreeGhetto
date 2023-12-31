@@ -1,0 +1,32 @@
+.contacts {
+    padding-top: 70px;
+    padding-bottom: 250px;
+
+    @include miniTablet {
+        padding-bottom: 150px;
+    }
+}
+
+.contacts-content {
+
+    padding-top: 40px;
+    p {
+        color: $dark-color;
+        text-align: center;
+        font-size: 18px;
+        line-height: 150%; /* 27px */
+        letter-spacing: -0.5px;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+
+    a {
+        color: $accent-color;
+        font-size: 18px;
+        line-height: 150%; /* 27px */
+        letter-spacing: -0.5px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+}

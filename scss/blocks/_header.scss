@@ -1,0 +1,98 @@
+.header {
+    max-height: 760px;
+
+    @include miniTablet {
+        height: 600px;
+    }
+}
+
+.header-footer-wrapper {
+    padding-top: 35px;
+}
+
+.intro {
+    min-height: 650px;
+
+    @media screen and (min-width: 570px) {
+        background-image: url('./../images/Abstract.png');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+   
+}
+
+.intro-content {
+    text-align: center;
+    padding-top: 165px;
+
+    @include miniTablet {
+        padding: 50px;
+    }
+}
+
+.intro-heading {
+    color: $gray-color;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: -0.5px;
+
+    span {
+        color: $accent-color;
+    }
+
+    @include miniTablet {
+        font-size: 25px;
+    }
+}
+
+.intro-heading-under {
+    color: $gray-color;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: -0.5px;
+
+    @include miniTablet {
+        font-size: 20px;
+    }
+}
+
+.intro-text {
+    color: $white;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px; /* 133.333% */
+    letter-spacing: -0.5px;
+    padding-top: 20px;
+
+    @include miniTablet {
+        font-size: 14px;
+    }
+}
+
+.button {
+    display: flex;
+
+    border-radius: 5px;
+    background: $accent-color;
+    width: 170px;
+    height: 48px;
+    flex-shrink: 0;
+    margin: 0 auto;
+    margin-top: 40px;
+
+    a {
+        padding: 12px 28px;
+
+        @include miniTablet {
+            font-size: 12px;
+        }
+    }
+
+    @include miniTablet {
+        width: 140px;
+        height: 40px;
+    }
+}

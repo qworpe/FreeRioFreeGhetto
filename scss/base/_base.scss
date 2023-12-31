@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Poppins:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    color: $white;
+}
+
+ a {
+    font-family: 'Poppins', sans-serif;
+    color: $white;
+
+    &:hover{
+        color: #BEBEBE;
+        transition: color 0.2s;
+    }
+}
+
+.header, .nav, .footer {
+    background-color: $dark-color;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: $accent-color;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 130%; /* 78px */
+    letter-spacing: -0.5px;
+
+    @include miniTablet {
+        font-size: 35px;
+    }
+}
+
+h2{
+    color: $dark-color;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 130%; /* 52px */
+    letter-spacing: -0.5px;
+
+    @include miniTablet {
+        font-size: 25px;
+    }
+}
+
+.cart-link {
+    font-family: 'DM Sans', sans-serif;
+}
+
+.general-nav {
+    background-color: $dark-color;
+}
+
+
+.none {
+    display: none;
+}

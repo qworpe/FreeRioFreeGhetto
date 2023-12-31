@@ -1,0 +1,21 @@
+.skills-block {
+    padding-top: 70px;
+    padding-bottom: 300px;
+
+    p {
+        color: $dark-color;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 150%; /* 27px */
+        letter-spacing: -0.5px;
+        padding-top: 20px;
+    }
+
+    @include miniTablet {
+        padding-bottom: 150px;
+    }
+}
+.frontend {
+    padding: 40px 0;
+}

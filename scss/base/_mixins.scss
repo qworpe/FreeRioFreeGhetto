@@ -1,0 +1,12 @@
+@mixin miniTablet{ 
+    @media screen and (max-width: 570px){
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media screen and (max-width: 385px){
+        @content;
+    }
+}
+
